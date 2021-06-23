@@ -1,11 +1,11 @@
-﻿using Hotel.Rates.Api.Models;
-using Hotel.Rates.Data;
+﻿using Hotel.Rates.Data;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Hotel.Rates.Data.Models;
 using Hotel.Rates.Infrastructure;
 
 namespace Hotel.Rates.Api.Controllers

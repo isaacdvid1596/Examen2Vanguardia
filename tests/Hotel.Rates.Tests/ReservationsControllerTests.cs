@@ -1,10 +1,11 @@
 using Hotel.Rates.Api.Controllers;
-using Hotel.Rates.Api.Models;
 using Hotel.Rates.Data;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Data.Sqlite;
 using Microsoft.EntityFrameworkCore;
 using System;
+using Hotel.Rates.Data.Models;
+using Hotel.Rates.Infrastructure;
 using Xunit;
 
 namespace Hotel.Rates.Tests

@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using Hotel.Rates.Data.DTOs;
 
 namespace Hotel.Rates.Data.Interfaces
 {
@@ -6,6 +7,6 @@ namespace Hotel.Rates.Data.Interfaces
     {
         //Create Reservation Method
 
-        ServiceResult<ReservationDto> CreateReservation()
+        ServiceResult<ReservationDto> CreateReservation();
     }
 }
