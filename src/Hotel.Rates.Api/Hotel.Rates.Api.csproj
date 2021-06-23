@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
@@ -16,6 +16,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Hotel.Rates.Data\Hotel.Rates.Data.csproj" />
+    <ProjectReference Include="..\Hotel.Rates.Infrastructure\Hotel.Rates.Infrastructure.csproj" />
   </ItemGroup>
 
 

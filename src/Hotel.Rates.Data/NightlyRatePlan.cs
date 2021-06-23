@@ -8,7 +8,7 @@ namespace Hotel.Rates.Data
     {
         public NightlyRatePlan()
         {
-            RatePlanType = (int)Data.RatePlanType.Nightly;
+            RatePlanType = (int)Enums.RatePlanType.Nightly;
         }
     }
 }

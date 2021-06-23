@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Hotel.Rates.Infrastructure;
 
 namespace Hotel.Rates.Api.Controllers
 {
@@ -22,7 +23,10 @@ namespace Hotel.Rates.Api.Controllers
         [HttpGet]
         public IActionResult Get()
         {
-            var result = _context.RatePlans.Include(r => r.Seasons).Include(r => r.RatePlanRooms).ThenInclude(r => r.Room)
+            var result = _context.RatePlans
+                .Include(r => r.Seasons)
+                .Include(r => r.RatePlanRooms).
+                ThenInclude(r => r.Room)
                 .Select(x => new
                 {
                     RatePlanId = x.Id,

@@ -1,10 +1,9 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using System.Collections.Generic;
+using Hotel.Rates.Data;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace Hotel.Rates.Data.Configurations
+namespace Hotel.Rates.Infrastructure.Configurations
 {
     public class RatePlanRoomConfiguration : IEntityTypeConfiguration<RatePlanRoom>
     {

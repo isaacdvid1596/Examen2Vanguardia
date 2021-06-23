@@ -8,7 +8,7 @@ namespace Hotel.Rates.Data
     {
         public int RatePlanId { get; set; }
 
-        public RatePlan Rateplan { get; set; }
+        public RatePlan RatePlan { get; set; }
 
         public int RoomId { get; set; }
 

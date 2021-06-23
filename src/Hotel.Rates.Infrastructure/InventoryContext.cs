@@ -3,8 +3,14 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using Hotel.Rates.Data;
+using NightlyRatePlanConfiguration = Hotel.Rates.Infrastructure.Configurations.NightlyRatePlanConfiguration;
+using RatePlanConfiguration = Hotel.Rates.Infrastructure.Configurations.RatePlanConfiguration;
+using RatePlanRoomConfiguration = Hotel.Rates.Infrastructure.Configurations.RatePlanRoomConfiguration;
+using RoomConfiguration = Hotel.Rates.Infrastructure.Configurations.RoomConfiguration;
+using SeasonConfiguration = Hotel.Rates.Infrastructure.Configurations.SeasonConfiguration;
 
-namespace Hotel.Rates.Data
+namespace Hotel.Rates.Infrastructure
 {
     public class InventoryContext : DbContext
     {

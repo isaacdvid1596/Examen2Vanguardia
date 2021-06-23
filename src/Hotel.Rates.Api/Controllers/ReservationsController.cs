@@ -6,6 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Hotel.Rates.Infrastructure;
 
 namespace Hotel.Rates.Api.Controllers
 {
@@ -14,6 +15,11 @@ namespace Hotel.Rates.Api.Controllers
     public class ReservationsController : ControllerBase
     {
         private readonly InventoryContext _context;
+
+        //eliminar el data context y remplazarlo por un servicio
+
+        
+
 
         public ReservationsController(InventoryContext context)
         {

@@ -8,7 +8,7 @@ namespace Hotel.Rates.Data
     {
         public IntervalRatePlan()
         {
-            RatePlanType = (int) Data.RatePlanType.Interval;
+            RatePlanType = (int) Enums.RatePlanType.Interval;
         }
 
         public int IntervalLength { get; set; }
