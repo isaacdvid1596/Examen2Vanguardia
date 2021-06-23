@@ -8,8 +8,6 @@ namespace Hotel.Rates.Data.Services
 {
     public class RoomService : IRoomService
     {
-
-        
         public RoomService()
         {
             

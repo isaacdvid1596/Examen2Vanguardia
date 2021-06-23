@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Hotel.Rates.Data.Interfaces;
 using Hotel.Rates.Data.Models;
 using Hotel.Rates.Infrastructure;
 
@@ -14,16 +15,14 @@ namespace Hotel.Rates.Api.Controllers
     [Route("api/[controller]")]
     public class ReservationsController : ControllerBase
     {
+        private readonly IReservationService _reservationService;
         private readonly InventoryContext _context;
 
         //eliminar el data context y remplazarlo por un servicio
 
-        
-
-
-        public ReservationsController(InventoryContext context)
+        public ReservationsController(IReservationService reservationService)
         {
-            this._context = context;
+            _reservationService = reservationService;
         }
 
         [HttpPost]
