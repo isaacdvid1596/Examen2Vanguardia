@@ -4,8 +4,10 @@ using System.Text;
 
 namespace Hotel.Rates.Data.Interfaces
 {
-    public interface IRepository<T,TKey>
+    public interface IRateRepository<T>
     {
-        
+        IReadOnlyList<T> GetAll();
+
+        T GetById(int id);
     }
 }
